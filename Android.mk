@@ -1,7 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(call is-vendor-board-platform,QCOM),true)
-
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_RELATIVE_PATH := hw
@@ -141,5 +139,3 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_EXECUTABLE)
-
-endif
